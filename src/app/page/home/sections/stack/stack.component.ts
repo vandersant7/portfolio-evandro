@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { IStackIcon } from './../../../../core/data/icon.interface';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-stack',
@@ -7,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './stack.component.scss'
 })
 export class StackComponent {
-
+  @Input({ required: true }) stackIcons: IStackIcon[] = [];
 }
